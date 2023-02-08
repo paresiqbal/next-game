@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className="pb-4">Rock Paper Scissors Game</h1>
           <h2 className="pb-4">O | X</h2>
           <Link
-            href={"/TicTacToe"}
+            href={"/RockPaperScissors"}
             className="py-1 px-6 bg-cyan-600 hover:bg-cyan-500 rounded-lg cursor-pointer "
           >
             Play game
