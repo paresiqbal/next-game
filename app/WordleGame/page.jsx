@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function Wordle() {
+export default function WordleGame() {
   const [solution, setSolution] = useState(null);
 
   useEffect(() => {

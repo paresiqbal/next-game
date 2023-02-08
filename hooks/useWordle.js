@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function useWordl() {
+export default function useWordle() {
   const [turn, setTurn] = useState(0);
   const [currentGuess, setCurrentGuess] = useState("");
   const [guesses, setGuesses] = useState([]);
