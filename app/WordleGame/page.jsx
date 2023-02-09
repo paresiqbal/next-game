@@ -17,7 +17,9 @@ export default function WordleGame() {
 
   return (
     <div>
-      <h1>Worlde</h1>
+      <h1 className="text-2xl font-bold text-white text-center py-2 bg-teal-500 skew-y-2">
+        Worlde
+      </h1>
       {solution && <Worlde solution={solution} />}
     </div>
   );
