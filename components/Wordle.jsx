@@ -6,7 +6,7 @@ import Link from "next/link";
 import Keypad from "./Keypad";
 
 export default function Worlde({ solution }) {
-  const { currentGuess, guesses, turn, isCorrect, handleKeyup } =
+  const { currentGuess, guesses, turn, isCorrect, usedKeys, handleKeyup } =
     useWordle(solution);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function Worlde({ solution }) {
       <div>solution - {solution}</div>
       <div>Current Guess - {currentGuess}</div>
       <Grid guesses={guesses} currentGuess={currentGuess} turn={turn} />
-      <Keypad />
+      <Keypad usedKeys={usedKeys} />
       <Link
         href={"/"}
         className="bg-cyan-500 py-2 px-4 rounded-lg text-2xl hover:bg-cyan-600"
