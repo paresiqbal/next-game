@@ -1,4 +1,5 @@
 "use client";
+import Worlde from "@/components/Wordle";
 import { useEffect, useState } from "react";
 
 export default function WordleGame() {
@@ -17,7 +18,7 @@ export default function WordleGame() {
   return (
     <div>
       <h1>Worlde</h1>
-      {solution && <div>Solution is {solution}</div>}
+      {solution && <Worlde solution={solution} />}
     </div>
   );
 }
