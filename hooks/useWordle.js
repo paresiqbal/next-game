@@ -40,20 +40,20 @@ const useWordle = (solution) => {
   const addNewGuess = (formatGuess) => {
     if (currentGuess === solution) {
       setIsCorrect(true);
-      setGuesses((prevGuesses) => {
-        let newGuesses = [...prevGuesses];
-        newGuesses[turn] = formatGuess;
-
-        return newGuesses;
-      });
-      setHistory((prevHistory) => {
-        return [...prevHistory, currentGuess];
-      });
-      setTurn((prevTurn) => {
-        return prevTurn + 1;
-      });
-      setCurrentGuess("");
     }
+    setGuesses((prevGuesses) => {
+      let newGuesses = [...prevGuesses];
+      newGuesses[turn] = formatGuess;
+
+      return newGuesses;
+    });
+    setHistory((prevHistory) => {
+      return [...prevHistory, currentGuess];
+    });
+    setTurn((prevTurn) => {
+      return prevTurn + 1;
+    });
+    setCurrentGuess("");
   };
 
   // handle keyup event & track current guess
